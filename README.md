@@ -28,8 +28,9 @@ Saneamiento y Validación de Datos:
 
 Se implementan validaciones tanto en el registro como en el inicio de sesión para garantizar que los datos sean correctos y evitar vulnerabilidades de seguridad (ej. inyección de SQL, XSS).
 Estructura del Proyecto
-El sistema está compuesto por varios archivos PHP que implementan las funcionalidades descritas. A continuación se detallan los archivos más importantes:
+El sistema está compuesto por varios archivos PHP que implementan las funcionalidades descritas. 
 
+A continuación se detallan los archivos más importantes:
 1. index.php
 Página de inicio donde los usuarios pueden elegir entre registrarse o iniciar sesión.
 2. registro.php
@@ -47,7 +48,8 @@ Cierra la sesión del usuario y redirige al formulario de inicio de sesión.
 Clase que maneja las sesiones de usuario. Permite iniciar, obtener y cerrar sesiones.
 8. Usuario.php
 Clase que define a un usuario, incluyendo su nombre, contraseña y rol. También contiene métodos para validar usuarios y obtener opciones según su rol.
-Flujo del Sistema
+
+# Flujo del Sistema
 Página de inicio (index.php): El usuario tiene la opción de registrarse o iniciar sesión.
 Formulario de registro (registro.php): El usuario ingresa sus datos (nombre de usuario, contraseña, rol). Se valida que el nombre de usuario tenga al menos 6 caracteres y que la contraseña contenga letras y números.
 Formulario de inicio de sesión (login.php): El usuario ingresa su nombre de usuario y contraseña. Si las credenciales son correctas, el usuario es redirigido a su perfil (perfil.php).
@@ -57,16 +59,19 @@ Profesor: Ver clases y usuarios.
 Administrador: Gestionar clases, usuarios y membresías.
 Clases disponibles (clases.php): El sistema muestra las clases disponibles para que los usuarios las visualicen.
 Cerrar sesión (logout.php): Cierra la sesión del usuario y lo redirige a la página de inicio de sesión.
-Validación y Seguridad
+
+# Validación y Seguridad
 Se validan los datos del formulario de registro y inicio de sesión para asegurarse de que el nombre de usuario sea adecuado (al menos 6 caracteres) y que la contraseña combine letras y números.
 Se utilizan sesiones para mantener al usuario autenticado durante su navegación.
 Se utiliza una cookie para recordar el último usuario registrado, lo que mejora la experiencia del usuario.
-Instrucciones para Ejecutar el Proyecto
+
+# Instrucciones para Ejecutar el Proyecto
 Sube los archivos a un servidor que soporte PHP (puede ser un servidor local con XAMPP o un servidor remoto).
 Accede al archivo index.php desde tu navegador.
 Regístrate como nuevo usuario o inicia sesión si ya tienes cuenta.
 Dependiendo del rol que elijas durante el registro, se te mostrarán diferentes opciones en el perfil (usuario, profesor o administrador).
-Archivos del Proyecto
+
+# Archivos del Proyecto
 index.php: Página principal del sistema.
 registro.php: Formulario de registro de usuarios.
 login.php: Formulario de inicio de sesión.
