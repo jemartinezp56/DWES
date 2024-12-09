@@ -8,13 +8,10 @@ Implementar sesiones y cookies para mantener la autenticación del usuario duran
 Aplicar saneamiento y validación de datos para evitar vulnerabilidades de seguridad y garantizar una correcta experiencia de usuario.
 
 # Características Principales
-Registro de Usuario:
-
-Los usuarios pueden registrarse proporcionando un nombre de usuario, contraseña y rol (Usuario, Profesor, Administrador).
+Registro de Usuario:Los usuarios pueden registrarse proporcionando un nombre de usuario, contraseña y rol (Usuario, Profesor, Administrador).
 La contraseña debe tener 6 caracteres, combinando letras y números, y el nombre de usuario debe tener al menos 6 caracteres.
-Inicio de Sesión:
 
-Los usuarios pueden iniciar sesión utilizando sus credenciales (nombre de usuario y contraseña).
+Inicio de Sesión: Los usuarios pueden iniciar sesión utilizando sus credenciales (nombre de usuario y contraseña).
 Si las credenciales son correctas, el usuario se redirige a su perfil.
 Las credenciales incorrectas muestran un mensaje de error.
 
